@@ -1,12 +1,34 @@
-Umineko Scripting
-=================
+## Wprowadzenie
+To tłumaczenie jest Polskie Tłumaczenie do Umineko Project (Projekt Umineko)
+## Status
+Ogółem - Tłumaczenie jest w toku. Pracujemy nad pierwszym Epizodem 1, i będziemy kontynuować ten projekt aż do skutku.
 
-[![Build Status](../../workflows/CI/badge.svg)](../../actions)
+09.02.2025r. - Tłumaczenie rozpoczęte!
+## Progress
 
-This is the script code and select related tools empowering [Umineko Project port](https://umineko-project.org) of Umineko no Naku Koro ni from PlayStation 3. The code present here is not finished and remains being in development state.
+<details>
+<summary>Kliknij aby rozwinąć tabelkę z Progressem</summary>
 
-#### Credits
-- Umineko Project
-- Knox Translations
-- SNS Team
-- All third-party contributors and authors
+|  Epizod  | Tłumaczenie | Korekta | Czytanie testowe |                     Całkowity Progress                     |
+|----------|-------------|---------|------------------|------------------------------------------------------------|
+| 1        | 2,5%        | 1,5%    | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 2,5% |
+| 2        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| 3        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| 4        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| 5        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| 6        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| 7        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| 8        | 0%          | 0%      | 0%               | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 0% |
+| Menu     |             |         |                  | 0% |
+| Grafiki  |             |         |                  | 0% |
+
+Legenda:
+- 🟩 Ukończony
+- 🟥 Nie rozpoczęty/W toku
+
+</details>
+
+## Creditsy
+- Oryginalna Praca: 07th Expansion
+- Główny Projekt: Umineko Project
+- Tłumaczenie: MichaelRed, Martusiaxxxx, CzewaTron
