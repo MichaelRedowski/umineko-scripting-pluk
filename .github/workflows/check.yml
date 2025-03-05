@@ -20,3 +20,4 @@ jobs:
       - name: Checks
         run: |
           php update-manager/script-check.php check pl || exit 1
+          php update-manager/script-check.php check uk || exit 1
