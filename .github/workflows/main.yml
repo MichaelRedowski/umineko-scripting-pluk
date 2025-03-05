@@ -27,9 +27,7 @@ jobs:
           LAST=$(<current/last)
           if [ "$LAST" == "" ]; then LAST=1; fi
           if [ -f current/last_pl ]; then LAST_PL=$(<current/last_pl); else LAST_PL="$LAST" ; fi
-          if [ -f current/last_uk ]; then LAST_UK=$(<current/last_uk); else LAST_UK="$LAST" ; fi
           php update-manager/update-manager.php dscript "ciout/pl.txt" . pl ${BUILD} || exit 1
-          php update-manager/update-manager.php dscript "ciout/uk.txt" . uk ${BUILD} || exit 1
           cp misc/chiru.file ciout
           cp misc/game.hash ciout
           cp misc/default.cfg ciout
@@ -37,13 +35,10 @@ jobs:
           cp misc/uk.cfg ciout
           cd ciout
           zip -qry umineko-pl-scripts_r${BUILD}_dev.zip pl.txt pl.cfg || exit 1
-          zip -qry umineko-uk-scripts_r${BUILD}_dev.zip uk.txt uk.cfg || exit 1
           cd ..
           php update-manager/update-manager.php script ciout/pl.txt "ciout/pl.file" "$LAST_PL" || exit 1
-          php update-manager/update-manager.php script ciout/uk.txt "ciout/uk.file" "$LAST_PL" || exit 1
           cd ciout
           zip -qry umineko-pl-scripts_r${BUILD}.zip pl.file pl.cfg || exit 1
-          zip -qry umineko-uk-scripts_r${BUILD}.zip uk.file uk.cfg || exit 1
           cd ..
           git show -s --format="%s" > release_notes.md
           echo "Refer to https://forum.umineko-project.org for more details." >> release_notes.md
@@ -70,15 +65,4 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./ciout/umineko-pl-scripts_r${{ env.BUILD }}.zip
           asset_name: umineko-pl-scripts_r${{ env.BUILD }}.zip
-          asset_content_type: application/zip
-
-      - name: Upload UK
-        if: github.repository_owner == ${{ github.repository_owner }}
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./ciout/umineko-uk-scripts_r${{ env.BUILD }}.zip
-          asset_name: umineko-uk-scripts_r${{ env.BUILD }}.zip
           asset_content_type: application/zip
